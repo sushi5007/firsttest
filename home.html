@@ -9,11 +9,20 @@
 
   gtag('config', 'G-FZ158VJ5JE');
 </script>
+<script>
+function trackCTA(){
+gtag("event", "分享", {"platform":"Facebook",
+                      "title":"路嘉欣好棒棒",
+                      "value": 1
+                      "aaaa":1});
+alert("感謝大大無私的分享");}
+</script>
+
     <title>HomePage</title>
   </head>
   <body>
     Hello Google Analytics
-    
+    <button onclick="trackCTA();">分享吧！</button>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iFVYG4JbeXU?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZY0y5lHJqQg?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </body>
